@@ -5,11 +5,10 @@ import java.util.ArrayList;
 public class Checkout1 {
 
 	private int runningTotal;
-	private PricingRules prices;
 	private ArrayList<Item> priceList = new ArrayList<>();
 
 	public Checkout1() {
-		prices = new PricingRules();
+		PricingRules prices = new PricingRules();
 		priceList = prices.getPrices();
 	}
 
